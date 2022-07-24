@@ -1,0 +1,15 @@
+#!/bin/bash -e
+
+script=$(readlink -f "$0")
+dir=$(dirname "$script")
+
+if ! xdpyinfo > /dev/null 2>&1
+then
+    # Most likely no VNC connection has been established yet.
+    echo "Error: X is not available" 1>&2
+    exit 1
+fi
+
+source "$dir/venv/bin/activate"
+export PYTHONPATH="$dir/HDR-Merge"
+python "$PYTHONPATH/hdr_brackets.py"

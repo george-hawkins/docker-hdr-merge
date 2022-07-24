@@ -1,0 +1,5 @@
+{
+    "blender_exe": "/var/tmp/workspace/blender-2.79b-linux-glibc219-x86_64/blender",
+    "luminance_cli_exe": "/usr/bin/luminance-hdr-cli",
+    "align_image_stack_exe": "/usr/bin/align_image_stack"
+}

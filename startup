@@ -1,0 +1,5 @@
+#!/bin/bash -e
+
+# Oddly, x11vnc still outputs some things to stdout and stderr even if you use -logfile.
+x11vnc -forever -create -passwd $VNC_PASSWORD -logfile x11vnc.log > x11vnc.out 2>&1 &
+/bin/bash

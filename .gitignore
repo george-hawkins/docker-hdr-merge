@@ -1,0 +1,8 @@
+.idea/
+.*.sw*
+venv/
+*.xcf
+HDR-Merge/
+blender-2.79b-linux-glibc219-x86_64/
+x11vnc.log
+x11vnc.out
